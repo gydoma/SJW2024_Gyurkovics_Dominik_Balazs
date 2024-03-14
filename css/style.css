@@ -8,12 +8,27 @@
     justify-content: center;
     align-items: center;
 }
+.footer {
+    background-image: url('/img/wave.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
 .bg-light{
     background-color: #06435f !important;
 }
 .img-border{
     
-    box-shadow: 1px 1px 10px #06435f;
+    box-shadow: 1px 1px 3px #06435f;
     border: 5px solid #fff;
     border-radius: 5px;
 
@@ -22,14 +37,49 @@
     font-family: 'Marhey', sans-serif;
 }
 h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
     color:#fff;
     text-shadow: 5px 5px 10px black;
+}
+@media (max-width: 992px) {
+    h1 {
+        font-size: 1.5em;
+    }
 }
 h2{
     color: #1283b9;
     text-decoration: #1283b9 wavy underline;
+    font-variant: small-caps;
 }
-
+h3{
+    color: #fff;
+    text-shadow: 5px 5px 10px black;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+  th, td {
+    text-align: center;
+    padding: 10px;
+}
+  th {
+    background-color: #007bff;
+    color: #fff;
+}
+  tbody tr:nth-child(even) {
+    background-color: rgba(173, 216, 230, 0.1);
+}
+  tbody tr:hover {
+    background-color: rgba(173, 216, 230, 0.7);
+}
+  td:first-child {
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 25%;
+}
 .kepgrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -43,3 +93,10 @@ h2{
 .kep4 { grid-area: 3 / 1 / 4 / 2; }
 .kep5 { grid-area: 3 / 2 / 4 / 3; }
 .kep6 { grid-area: 2 / 3 / 4 / 5; }
+
+.kep1:hover, .kep2:hover, .kep3:hover, .kep4:hover, .kep5:hover, .kep6:hover  {
+    transition: transform 1s;    
+    transform: scale(1.04);
+    cursor: pointer;
+      
+}
