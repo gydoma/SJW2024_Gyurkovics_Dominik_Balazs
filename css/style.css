@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+.fejlec {
+    height: 400px;
+    background-image: url('/img/balaton_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-light{
+    background-color: #06435f !important;
+}
+.img-border{
+
+}
+.font-marhey{
+    font-family: 'Marhey', sans-serif;
+}
